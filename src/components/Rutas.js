@@ -2,7 +2,7 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 import Inicio from "./Inicio/Inicio"
 import navbar from "./navbar"
-import footer from "./footer"
+import Footer from "./footer"
 
 
 const Rutas = () => {
@@ -17,8 +17,7 @@ const Rutas = () => {
                 <Route path="/" element={<Inicio/>}/>
             </Routes>
             <footer>
-                <footer/> 
-                {/* No está tomando bien el link a footer */}
+                <Footer/> 
             </footer>
         </Router>
     </>
