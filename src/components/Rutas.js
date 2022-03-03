@@ -1,17 +1,17 @@
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 import Inicio from "./Inicio/Inicio"
-import navbar from "./navbar"
+import Navbar from "./navbar"
 import Footer from "./footer"
 
 
+
 const Rutas = () => {
-  return (
+return (
     <>
         <Router>
             <header>
-                <navbar/> 
-                {/* No está tomando bien el link a navbar */}
+                <Navbar/>
             </header>
             <Routes>
                 <Route path="/" element={<Inicio/>}/>
@@ -21,7 +21,7 @@ const Rutas = () => {
             </footer>
         </Router>
     </>
-  )
+)
 }
 
 export default Rutas
