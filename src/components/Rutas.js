@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 import Inicio from "./Inicio/Inicio"
 import Navbar from "./navbar"
 import Footer from "./footer"
-import TellAFriend from "./TellAFriend"
+import RedesSociales from "./RedesSociales/RedesSociales"
 
 
 
@@ -18,7 +18,7 @@ return (
                 <Route path="/" element={<Inicio/>}/>
             </Routes>
             <footer>
-                <TellAFriend/>
+                <RedesSociales/>
                 <Footer/> 
             </footer>
 
