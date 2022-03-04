@@ -16,14 +16,14 @@ const ProductoEnOferta = ({data}) => {
     const {name, price, oldPrice, img} = data;
 
     return (
-        <div className='producto-en-oferta w-64 h-80 text-center mt-10 items-center'>
+        <div className='font-poppins w-[270px] h-[332px] text-center mt-10 items-center'>
             <div>
-                <img className='object-cover w-64 h-40 rounded-t-2xl' src={img} alt={name}/>
+                <img className='object-cover w-[270px] h-40 rounded-t-2xl' src={img} alt={name}/>
             </div>
-            <div className='grid col-auto justify-center h-40 bg-red-50 rounded-b-2xl'>
+            <div className='grid col-auto justify-center h-40 bg-[#F7F5F0] rounded-b-2xl'>
                 <h4 className='font-medium text-lg mt-5'>{name}</h4>
-                <h5 className='text-2xl font-semibold text-orange-500 pb-2'>${price}.00 <span className='text-gray-500 line-through text-lg font-normal'>${oldPrice}.00</span></h5>
-                <button className='bg-orange-500 text-white rounded w-56 h-10'>Quiero esta oferta</button>
+                <h5 className='text-2xl font-semibold text-[#FF8126] pb-[5px]'>${price}.00 <span className='text-gray-500 line-through text-lg font-normal'>${oldPrice}.00</span></h5>
+                <button className='bg-[#FF8126] text-white rounded w-[230px] h-10 mb-6'>Quiero esta oferta</button>
             </div>
         </div>
     )

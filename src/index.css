@@ -1,11 +1,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-.producto-en-oferta {
-    font-family: 'Poppins', sans-serif;
-}
-
-.title-ultimas-ofertas {
-    font-family: 'Cormorant', serif;
-}
