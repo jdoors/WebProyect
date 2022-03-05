@@ -4,7 +4,7 @@ import Inicio from "./Inicio/Inicio"
 import Navbar from "./navbar"
 import Footer from "./footer"
 import TellAFriend from "./TellAFriend"
-import FreeDelivery from "./Inicio/FreeDelivery/FreeDelivery"
+import FreeDelivery from "./Inicio/FreeDelivery"
 
 
 
