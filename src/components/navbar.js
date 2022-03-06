@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom'
 
 
 
+
 const navbar = () => {
   return (
     <div className='items-center justify-between flex flex-wrap bg-[#E5E5E5] px-12 py-1 my-0 mx-auto'>
@@ -18,19 +19,19 @@ const navbar = () => {
     
     <ul className='flex space-x-4 font-poppins'>  
       <li>
-      <NavLink to="/Inicio">Inicio</NavLink>
+      <NavLink to="/home">Inicio</NavLink>
       </li>  
 
       <li>
-        <NavLink to="/Perros">Perros</NavLink>
+        <NavLink to="/perros">Perros</NavLink>
       </li>
 
       <li>
-        <NavLink to="Gatos">Gatos</NavLink>
+        <NavLink to="gatos">Gatos</NavLink>
       </li>
 
       <li>
-        <NavLink to="Contactos">Contactos</NavLink>
+        <NavLink to="contactos">Contactos</NavLink>
       </li>
       </ul>
     </div>

@@ -1,9 +1,10 @@
 import React from 'react'
 
-const Inicio = () => {
+
+const Home = () => {
 return (
     <h2> hola desde Inicio</h2>
 )
 }
 
-export default Inicio
+export default Home
