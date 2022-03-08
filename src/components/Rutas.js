@@ -4,6 +4,7 @@ import Inicio from "./Inicio/Inicio"
 import Navbar from "./navbar"
 import Footer from "./footer"
 import TellAFriend from "./TellAFriend"
+import FreeDelivery from "./Inicio/FreeDelivery"
 
 
 
@@ -12,6 +13,7 @@ return (
     <>
         <Router>
             <header>
+                <FreeDelivery/>
                 <Navbar/>
             </header>
             <Routes>
