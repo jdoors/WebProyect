@@ -21,8 +21,8 @@ const ProductoEnOferta = ({data}) => {
                 <img className='object-cover w-[270px] h-40 rounded-t-2xl' src={img} alt={name}/>
             </div>
             <div className='grid col-auto justify-center h-40 bg-[#F7F5F0] rounded-b-2xl'>
-                <h4 className='font-medium text-lg mt-5'>{name}</h4>
-                <h5 className='text-2xl font-semibold text-[#FF8126] pb-[5px]'>${price}.00 <span className='text-gray-500 line-through text-lg font-normal'>${oldPrice}.00</span></h5>
+                <p className='font-medium text-lg mt-5'>{name}</p>
+                <p className='text-2xl font-semibold text-[#FF8126] pb-[5px]'>${price}.00 <span className='text-gray-500 line-through text-lg font-normal'>${oldPrice}.00</span></p>
                 <button className='bg-[#FF8126] text-white rounded w-[230px] h-10 mb-6'>Quiero esta oferta</button>
             </div>
         </div>
