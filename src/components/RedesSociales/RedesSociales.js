@@ -11,19 +11,21 @@ const SocialMedia = () => {
                 <img className="object-cover h-[260px] w-screen filter grayscale" src={RedesSociales} />
             </div>
 
-            <div className='font-cormorant text-5xl font-[1000] top-[10%] absolute text-[#FF8126] text-center'>
+            <div className='font-cormorant text-6xl font-[1000]  mt-12 absolute text-[#FF8126] text-center'>
                 <h1>
                     Compartilo con tus amigos
                 </h1>
             </div>
 
-            <div className="absolute top-[60%] text-5xl text-[#FF8126]">
-                <FontAwesomeIcon icon={faFacebook} />
-                <FontAwesomeIcon icon={faInstagram} />
-                <FontAwesomeIcon icon={faTwitter} />
-                <FontAwesomeIcon icon={faWhatsapp} />
-                <FontAwesomeIcon icon={faFacebookMessenger} />
-                <FontAwesomeIcon icon={faTelegram} />
+            <div className="absolute top-[55%] text-[#FF8126] flex flex-wrap justify-evenly">
+                
+                <div><FontAwesomeIcon icon={faFacebook} className="mr-8 text-6xl" /></div>
+                <div><FontAwesomeIcon icon={faInstagram} className="mr-8 text-6xl" /></div>
+                <div><FontAwesomeIcon icon={faTwitter} className="mr-8 text-6xl" /></div>
+                <div><FontAwesomeIcon icon={faWhatsapp} className="mr-8 text-6xl" /></div>
+                <div><FontAwesomeIcon icon={faFacebookMessenger} className="mr-8 text-6xl" /></div>
+                <div><FontAwesomeIcon icon={faTelegram} className="text-6xl" /></div>
+
             </div>
 
         
