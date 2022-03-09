@@ -17,10 +17,10 @@ return (
             <header>
                 <Navbar/>
                 <Routes>
-                    <Route path="/ home" element={<Home/>}/>                
-                    <Route path="/ perros" element={<Perros/>}/>
-                    <Route path="/ gatos" element={<Gatos/>}/>
-                    <Route path="/ contactos" element={<Contactos/>}/>
+                    <Route path="/home" element={<Home/>}/>                
+                    <Route path="/perros" element={<Perros/>}/>
+                    <Route path="/gatos" element={<Gatos/>}/>
+                    <Route path="/contactos" element={<Contactos/>}/>
                 </Routes>
             </header>
             <Routes>

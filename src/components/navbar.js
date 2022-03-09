@@ -17,7 +17,7 @@ const navbar = () => {
 
     <div>
     
-    <ul className='flex space-x-4 font-poppins'>  
+    <ul className='flex flex-col md:flex-row space-x-4 font-poppins'>  
       <li>
       <NavLink to="/home">Inicio</NavLink>
       </li>  
