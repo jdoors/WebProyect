@@ -1,7 +1,8 @@
 import React from 'react'
 import imagen from './Imagenes/LogoNavbar.jpg'
 import { NavLink } from 'react-router-dom'
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faMagnifyingGlass,faCartShopping} from '@fortawesome/free-solid-svg-icons'
 
 
 
@@ -33,6 +34,9 @@ const navbar = () => {
       <li>
         <NavLink to="/contactos">Contactos</NavLink>
       </li>
+
+      <div><FontAwesomeIcon icon={faMagnifyingGlass} /></div>
+      <div><FontAwesomeIcon icon={faCartShopping} /></div>
       </ul>
     </div>
     
