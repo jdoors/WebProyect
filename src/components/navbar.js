@@ -27,11 +27,11 @@ const navbar = () => {
       </li>
 
       <li>
-        <NavLink to="gatos">Gatos</NavLink>
+        <NavLink to="/gatos">Gatos</NavLink>
       </li>
 
       <li>
-        <NavLink to="contactos">Contactos</NavLink>
+        <NavLink to="/contactos">Contactos</NavLink>
       </li>
       </ul>
     </div>
