@@ -7,7 +7,7 @@ const Footer = () => {
       <div class="xl:px-20 pb-6 lg:px-20 md:px-10 sm:px-5 px-10">
       <div class="w-full pt-12 flex flex-col sm:flex-row space-y-2 justify-end">
         <div class="w-full sm:w-1/4 pt-2 flex flex-col space-y-4">
-          <img src={logoMascota} alt="logo mascota"/> 
+          <img className="object-cover" src={logoMascota} alt="logo mascota"/> 
         </div>
         <div class="w-full sm:w-1/4 px-12 flex flex-col space-y-4">
           <h2 class="font-poppins">Sobre Nosotros</h2>
