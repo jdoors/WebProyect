@@ -5,6 +5,7 @@ import Navbar from "./navbar"
 import Footer from "./footer"
 import RedesSociales from "./RedesSociales/RedesSociales"
 import FreeDelivery from "./Inicio/FreeDelivery"
+import PorqueElejirnos, { caracteristicas } from "./WhyChoose"
 
 
 
@@ -20,6 +21,7 @@ return (
                 <Route path="/" element={<Inicio/>}/>
             </Routes>
             <footer>
+                <PorqueElejirnos>{caracteristicas}</PorqueElejirnos>
                 <RedesSociales/>
                 <Footer/> 
             </footer>
