@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 import Inicio from "./Inicio/Inicio"
 import Navbar from "./navbar"
 import Footer from "../components/Footer/footer"
-import TellAFriend from "./TellAFriend"
 import FreeDelivery from "./Inicio/FreeDelivery"
 
 
@@ -20,7 +19,7 @@ return (
                 <Route path="/" element={<Inicio/>}/>
             </Routes>
             <footer>
-                <TellAFriend/>
+                <RedesSociales/>
                 <Footer/> 
             </footer>
 
