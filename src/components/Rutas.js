@@ -5,6 +5,7 @@ import Navbar from "./navbar"
 import Footer from "./footer"
 import RedesSociales from "./RedesSociales/RedesSociales"
 import FreeDelivery from "./Inicio/FreeDelivery"
+import DescubrirMarcas from "./DescubrirMarcas/DescubrirMarcas"
 
 
 
@@ -15,6 +16,7 @@ return (
             <header>
                 <FreeDelivery/>
                 <Navbar/>
+                <DescubrirMarcas/>
             </header>
             <Routes>
                 <Route path="/" element={<Inicio/>}/>
