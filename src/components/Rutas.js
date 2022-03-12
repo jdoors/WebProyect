@@ -5,10 +5,7 @@ import Navbar from "./navbar"
 import Footer from "../components/Footer/footer"
 import FreeDelivery from "./Inicio/FreeDelivery"
 import PorqueElejirnos, { caracteristicas } from "./WhyChoose"
-
-
-
-
+import RedesSociales from "./RedesSociales/RedesSociales.js"
 
 
 
