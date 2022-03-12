@@ -6,6 +6,7 @@ import Footer from "../components/Footer/footer"
 import FreeDelivery from "./Inicio/FreeDelivery"
 import PorqueElejirnos, { caracteristicas } from "./WhyChoose"
 import RedesSociales from "./RedesSociales/RedesSociales.js"
+import DescubrirMarcas from "./DescubrirMarcas/DescubrirMarcas"
 
 
 
@@ -16,6 +17,7 @@ return (
             <header>
                 <FreeDelivery/>
                 <Navbar/>
+                <DescubrirMarcas/>
             </header>
             <Routes>
                 <Route path="/" element={<Inicio/>}/>
