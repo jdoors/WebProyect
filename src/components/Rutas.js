@@ -7,6 +7,8 @@ import Contactos from "./Pages/Contactos"
 import Gatos from "./Pages/Gatos"
 import Home from "./Pages/Home"
 import Perros from "./Pages/Perros"
+import Login from "./Pages/Login"
+import Carrito from "./Pages/Carrito"
 
 
 
@@ -21,6 +23,8 @@ return (
                     <Route path="/perros" element={<Perros/>}/>
                     <Route path="/gatos" element={<Gatos/>}/>
                     <Route path="/contactos" element={<Contactos/>}/>
+                    <Route path="/login" element={<Login/>}/>
+                    <Route path="/Carrito" element={<Carrito/>}/>
                 </Routes>
             </header>
             <Routes>
