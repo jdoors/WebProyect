@@ -6,7 +6,7 @@ const DMarca = () => {
 
         <div className="flex-row w-screen md:flex">
                 
-            <div className="h-[600px] object-center font-cormorant bg-gradient-to-b from-blue-200 md:bg-gradient-to-r from-blue-200">
+            <div className="h-[600px] object-center font-cormorant bg-gradient-to-b md:bg-gradient-to-r from-blue-200">
                 <br/>
                 <h1 className="text-3xl md:text-6xl font-[700] ml-[55px] mt-[20%]">Encontra las mejores marcas para tu mascota</h1>
                 <br/>
@@ -17,7 +17,7 @@ const DMarca = () => {
                 </button>
             </div>
 
-            <div className="">
+            <div className="hidden md:block">
                     <img className="object-none object-left h-[600px]" src={DescubrirMarcas}/>
             </div>
             
