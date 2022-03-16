@@ -12,6 +12,7 @@ import Footer from "../components/Footer/footer"
 import PorqueElejirnos, { caracteristicas } from "./WhyChoose"
 import RedesSociales from "./RedesSociales/RedesSociales.js"
 import DescubrirMarcas from "./DescubrirMarcas/DescubrirMarcas"
+import FreeDelivery from "./Inicio/FreeDelivery.js"
 
 
 const Rutas = () => {
