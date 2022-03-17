@@ -8,19 +8,19 @@ import {faMagnifyingGlass,faCartShopping,faArrowRightToBracket} from '@fortaweso
 
 const navbar = () => {
   return (
-    <div className='items-center justify-between flex flex-wrap bg-[#E5E5E5] px-12 py-1 my-0 mx-auto'>
+    <div className='flex flex-wrap items-center justify-between px-12 py-1 mx-auto my-0 bg-white'>
 
       <div className='items-center'>
-        <img src={imagen} className='w-24 rounded-full pt-2' ></img>
+        <img src={imagen} className='w-24 rounded-full pt-2 ml-[22px]' ></img>
         <h2 className='font-poppins mx-mp '>Pet Shop Fullstack</h2>
 
     </div>
 
     <div>
     
-    <ul className='flex flex-col md:flex-row space-x-4 font-poppins'>  
+    <ul className='flex flex-col space-x-4 md:flex-row font-poppins'>  
       <li>
-      <NavLink to="/home">Inicio</NavLink>
+      <NavLink to="/home" className="ml-4">Inicio</NavLink>
       </li>  
 
       <li>
