@@ -6,7 +6,7 @@ const DMarca = () => {
 
         <div className="flex-row w-screen md:flex">
             {/* Para md */}
-            <div className="h-[600px] object-center font-cormorant bg-gradient-to-b hidden md:block bg-gradient-to-r from-blue-200">
+            <div className="h-[600px] object-center font-cormorant hidden md:block bg-gradient-to-r from-blue-200">
                 <br/>
                 <h1 className="text-3xl md:text-6xl font-[700] ml-[55px] mt-[15%]">Encontra las mejores marcas para tu mascota</h1>
                 <br/>
