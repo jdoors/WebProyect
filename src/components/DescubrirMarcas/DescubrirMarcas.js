@@ -4,11 +4,11 @@ import DescubrirMarcas from "./Imagen/DescubrirMarcas.jpeg";
 const DMarca = () => {
     return (
 
-        <div className="flex-row w-screen md:flex">
+        <div className="flex-row justify-between md:flex">
             {/* Para md */}
-            <div className="h-[600px] object-center font-cormorant hidden md:block bg-gradient-to-r from-blue-200">
+            <div className="h-[600px] object-center w-[70%] font-cormorant hidden md:block bg-gradient-to-r from-blue-200">
                 <br/>
-                <h1 className="text-3xl md:text-6xl font-[700] ml-[55px] mt-[15%]">Encontra las mejores marcas para tu mascota</h1>
+                <h1 className="text-3xl md:text-6xl font-[700] ml-[55px] mt-[150px]">Encontra las mejores marcas para tu mascota</h1>
                 <br/>
                 <h2 className="text-xl md:text-3xl font-poppins ml-[55px]">Descubri marcas y sus historias</h2>
                 <br/>
@@ -28,9 +28,13 @@ const DMarca = () => {
                 </button>
             </div>
 
+            {/* Para md */}
+
             <div className="hidden md:block">
                     <img className="object-none object-left h-[600px]" src={DescubrirMarcas}/>
             </div>
+
+            {/* Para sm */}
 
             <div className="block md:hidden">
                     <img className="" src={DescubrirMarcas}/>
