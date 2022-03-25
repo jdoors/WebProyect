@@ -43,7 +43,7 @@ const navbar = () => {
         <a><FontAwesomeIcon icon={faArrowRightToBracket} /></a>
       </NavLink>
 
-      <NavLink to="Carrito">
+      <NavLink to="/ShoppingCart">
         <a><FontAwesomeIcon icon={faCartShopping} /></a>
       </NavLink>
       
