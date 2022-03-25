@@ -5,7 +5,7 @@ import PartnerRoyalCanin from './Images/RoyalCaninLogo.png'
 const Partner = () => {
 
   return (
-    <div className='w-full h-[300px] sm:h-[395px] bg-[#6090C3]' style={{backgroundImage: `url(${fondoRoyalCanin})`}}>
+    <div className='w-full h-[300px] sm:h-[395px] bg-[#6090C3] mt-5' style={{backgroundImage: `url(${fondoRoyalCanin})`}}>
         <div className='flex flex-col items-center'>
             <h2 className='font-cormorant text-3xl text-center sm:text-[40px] font-bold text-white -mb-7 mt-14'>Distribuidor Oficial de Royal Canin</h2>
             <img className='w-44 sm:w-64 -mb-7' src={PartnerRoyalCanin}/>
