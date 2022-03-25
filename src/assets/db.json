@@ -1,0 +1,88 @@
+{
+"Alimentos":[
+    {
+        "id":1,
+        "name": "Royal Canin",
+        "price": 100
+
+    },
+    {
+        "id":2,
+        "name": "Vitalcan",
+        "price": 200
+    },
+    {
+        "id":1,
+        "name": "Eukanuba",
+        "price": 300
+    }, 
+    {
+        "id":1,
+        "name": "Dog Chow",
+        "price": 400
+    }
+],
+
+"Juguetes":[
+    {
+        "id":1,
+        "name": "Pelota",
+        "price": 100
+    
+    },
+    {
+        "id":1,
+        "name": "Peluche",
+        "price": 100
+    
+    },
+    {
+        "id":1,
+        "name": "Hueso",
+        "price": 100
+    
+    },
+    {
+        "id":1,
+        "name": "Mordible",
+        "price": 100
+    
+    }
+],
+"Productos de Paseo":[
+    {
+        "id":1,
+        "name": "Collares",
+        "price": 100
+    },
+    {
+        "id":1,
+        "name": "Arnes",
+        "price": 100
+    },
+    {
+        "id":1,
+        "name": "Ropa",
+        "price": 100
+    },
+    {
+        "id":1,
+        "name": "Bolso Transportador",
+        "price": 100
+    }
+],
+"Bebedoros y Comederos":[
+    {
+        "id":1,
+        "name": "Bebedero",
+        "price": 100
+    },
+    {
+        "id":1,
+        "name": "Comedero",
+        "price": 100
+    }
+],
+"cart":[]
+
+}
