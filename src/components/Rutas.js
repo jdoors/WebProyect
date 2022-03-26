@@ -22,21 +22,22 @@ return (
                 <Navbar/>
                 <Routes>
                     <Route path="/home" element={<Home/>}/>                
-                    <Route path="/perros" element={<Perros/>}/>
-                    <Route path="/gatos" element={<Gatos/>}/>
-                    <Route path="/contactos" element={<Contactos/>}/>
-                    <Route path="/login" element={<Login/>}/>
-                    <Route path="/Carrito" element={<Carrito/>}/>
                 </Routes>
             </header>
+
             <Routes>
                 <Route path="/" element={<Inicio/>}/>
+                <Route path="/perros" element={<Perros/>}/>
+                <Route path="/gatos" element={<Gatos/>}/>
+                <Route path="/contactos" element={<Contactos/>}/>
+                <Route path="/login" element={<Login/>}/>
+                <Route path="/Carrito" element={<Carrito/>}/>
             </Routes>
+
             <footer>
                 <RedesSociales/>
                 <Footer/> 
             </footer>
-
         </Router>
     </>
 )
