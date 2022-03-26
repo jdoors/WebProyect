@@ -19,7 +19,7 @@ const navbar = () => {
     
     <ul className='flex flex-col space-x-4 font-poppins md:flex-row'>  
       <li>
-      <NavLink to="/home" className="ml-4">Inicio</NavLink>
+      <NavLink to="/" className="ml-4">Inicio</NavLink>
       </li>  
 
       <li>

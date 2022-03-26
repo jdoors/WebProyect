@@ -9,9 +9,7 @@ import Perros from "./Pages/Perros"
 import Login from "./Pages/Login"
 import Carrito from "./Pages/Carrito"
 import Footer from "../components/Footer/footer"
-import PorqueElejirnos, { caracteristicas } from "./WhyChoose"
 import RedesSociales from "./RedesSociales/RedesSociales.js"
-import DescubrirMarcas from "./DescubrirMarcas/DescubrirMarcas"
 import FreeDelivery from "./Inicio/FreeDelivery.js"
 
 
@@ -30,13 +28,11 @@ return (
                     <Route path="/login" element={<Login/>}/>
                     <Route path="/Carrito" element={<Carrito/>}/>
                 </Routes>
-                <DescubrirMarcas/>
             </header>
             <Routes>
                 <Route path="/" element={<Inicio/>}/>
             </Routes>
             <footer>
-                <PorqueElejirnos>{caracteristicas}</PorqueElejirnos>
                 <RedesSociales/>
                 <Footer/> 
             </footer>
