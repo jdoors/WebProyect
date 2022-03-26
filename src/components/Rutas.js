@@ -10,11 +10,8 @@ import Login from "./Pages/Login"
 import ShoppingCart from "./Carrito/ShoppingCart"
 import PorqueElejirnos, { caracteristicas } from "./WhyChoose"
 import RedesSociales from "./RedesSociales/RedesSociales.js"
-import DescubrirMarcas from "./DescubrirMarcas/DescubrirMarcas"
 import FreeDelivery from "./Inicio/FreeDelivery.js"
-import UltimasOfertas from "./Inicio/UltimasOfertas/UltimasOfertas"
 import Footer from "../components/Footer/footer"
-import SpaDay from "./Inicio/SpaDay/SpaDay"
 
 
 const Rutas = () => {
@@ -25,16 +22,13 @@ return (
                 <FreeDelivery/>
                 <Navbar/>
                     <Routes>
-                        <Route path="/home" element={<Home/>}/>                
+                        <Route path="/home" element={<Inicio/>}/>                
                         <Route path="/perros" element={<Perros/>}/>
                         <Route path="/gatos" element={<Gatos/>}/>
                         <Route path="/contactos" element={<Contactos/>}/>
                         <Route path="/login" element={<Login/>}/>
+                        <Route path="/ShoppingCart" element={<ShoppingCart/>}/>
                     </Routes>
-                <ShoppingCart/>
-                <DescubrirMarcas/>
-                <UltimasOfertas/>
-                <SpaDay/>
             </header>
             <Routes>
                 <Route path="/" element={<Inicio/>}/>
