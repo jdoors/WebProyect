@@ -3,14 +3,13 @@ import DMarca from '../DescubrirMarcas/DescubrirMarcas'
 import Partner from './Partner/Partner'
 import SpaDay from './SpaDay/SpaDay'
 import UltimasOfertas from './UltimasOfertas/UltimasOfertas'
-import PorqueElejirnos, { caracteristicas } from "../WhyChoose"
 
 
 
 const Inicio = () => {
   return (
     <main>
-      <DMarca/>
+      <DMarcas/>
       <UltimasOfertas/>
       <PorqueElejirnos>{caracteristicas}</PorqueElejirnos>
       <Partner/>

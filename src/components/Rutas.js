@@ -7,10 +7,11 @@ import Gatos from "./Pages/Gatos"
 import Home from "./Pages/Home"
 import Perros from "./Pages/Perros"
 import Login from "./Pages/Login"
-import Carrito from "./Pages/Carrito"
-import Footer from "../components/Footer/footer"
+import ShoppingCart from "./Carrito/ShoppingCart"
+import PorqueElejirnos, { caracteristicas } from "./WhyChoose"
 import RedesSociales from "./RedesSociales/RedesSociales.js"
 import FreeDelivery from "./Inicio/FreeDelivery.js"
+import Footer from "../components/Footer/footer"
 
 
 const Rutas = () => {
@@ -20,9 +21,9 @@ return (
             <header>
                 <FreeDelivery/>
                 <Navbar/>
-                <Routes>
-                    <Route path="/home" element={<Home/>}/>                
-                </Routes>
+                    <Routes>
+                        <Route path="/home" element={<Home/>}/>               
+                    </Routes>
             </header>
 
             <Routes>
@@ -31,7 +32,7 @@ return (
                 <Route path="/gatos" element={<Gatos/>}/>
                 <Route path="/contactos" element={<Contactos/>}/>
                 <Route path="/login" element={<Login/>}/>
-                <Route path="/Carrito" element={<Carrito/>}/>
+                <Route path="/Carrito" element={<ShoppingCart/>}/>
             </Routes>
 
             <footer>
