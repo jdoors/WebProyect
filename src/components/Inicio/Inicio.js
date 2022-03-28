@@ -1,19 +1,20 @@
 import React from 'react'
-import DMarca from '../DescubrirMarcas/DescubrirMarcas'
+import DMarca from './DescubrirMarcas/DescubrirMarcas'
 import Partner from './Partner/Partner'
 import SpaDay from './SpaDay/SpaDay'
 import UltimasOfertas from './UltimasOfertas/UltimasOfertas'
+import PorqueElegirnos from "./PorqueElegirnos/PorqueElegirnos"
 
 
 
 const Inicio = () => {
   return (
     <main>
-      <DMarcas/>
+      <DMarca/>
       <UltimasOfertas/>
-      <PorqueElejirnos>{caracteristicas}</PorqueElejirnos>
-      <Partner/>
+      <PorqueElegirnos/>
       <SpaDay/>
+      <Partner/>
     </main>
   )
 }

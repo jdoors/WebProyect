@@ -36,7 +36,7 @@ export const caracteristicas = [
   },
 ]
 
-export default function PorqueElejirnos() {
+export default function PorqueElegirnos() {
   return (
     <div className="bg-white">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">

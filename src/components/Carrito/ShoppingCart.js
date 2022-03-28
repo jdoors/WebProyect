@@ -11,26 +11,31 @@ const ShoppingCart = () => {
 
 
         const addToCart = (id) => {
-          console.log(id)
           dispatch({type:TYPES.ADD_TO_CART, payload:id})
         };
 
-        const deleteFromCart = () => {};
+        const deleteFromCart = (id, all = false) => {
+          if(all) {
+            dispatch({type: TYPES.REMOVE_ALL_PRODUCTS, payload: id});
+          } else {
+            dispatch({type: TYPES.REMOVE_ONE_PRODUCT, payload: id});
+          }
+        };
 
-        const clearCart = () => {};
+        const clearCart = () => {dispatch({type: TYPES.CLEAR_CART})};
 
   return (
     <div>
-        <h2>Carrito de Compras</h2>
-        <h3>Productos</h3>
+        <h2 className='mt-5 ml-10 text-lg font-medium'>Carrito de Compras</h2>
+        <h3 className='mt-5 ml-10 text-lg font-medium'>Productos</h3>
         <article className="flex flex-wrap justify-evenly">
           {product.map((product) => (<ProductItem key={product.id} data={product} addToCart={addToCart}/>))}
         </article>
-        <h3>Carrito</h3>
-        <div className="box">
+        <h3 className='mt-5 ml-10 text-lg font-medium'>Carrito</h3>
+        <div className="flex flex-wrap justify-center">
           {cart.map((item, index) => <CartItem key={index} data={item} deleteFromCart={deleteFromCart}/>)}
         </div>
-        <button onClick={clearCart}>Limpiar Carrito</button>
+        <button className="bg-[#FF8126] text-white rounded w-[230px] h-10 ml-5 mt-5" onClick={clearCart}>Limpiar Carrito</button>
     </div>
   )
 }
