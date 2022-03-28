@@ -4,15 +4,12 @@ import Inicio from "./Inicio/Inicio"
 import Navbar from "./navbar"
 import Contactos from "./Pages/Contactos"
 import Gatos from "./Pages/Gatos"
-import Home from "./Pages/Home"
 import Perros from "./Pages/Perros"
 import Login from "./Pages/Login"
-import Carrito from "./Pages/Carrito"
-import Footer from "../components/Footer/footer"
-import PorqueElejirnos, { caracteristicas } from "./WhyChoose"
+import ShoppingCart from "./Carrito/ShoppingCart"
 import RedesSociales from "./RedesSociales/RedesSociales.js"
-import DescubrirMarcas from "./DescubrirMarcas/DescubrirMarcas"
 import FreeDelivery from "./Inicio/FreeDelivery.js"
+import Footer from "../components/Footer/footer"
 
 
 const Rutas = () => {
@@ -22,25 +19,21 @@ return (
             <header>
                 <FreeDelivery/>
                 <Navbar/>
-                <Routes>
-                    <Route path="/home" element={<Home/>}/>                
-                    <Route path="/perros" element={<Perros/>}/>
-                    <Route path="/gatos" element={<Gatos/>}/>
-                    <Route path="/contactos" element={<Contactos/>}/>
-                    <Route path="/login" element={<Login/>}/>
-                    <Route path="/Carrito" element={<Carrito/>}/>
-                </Routes>
-                <DescubrirMarcas/>
             </header>
+
             <Routes>
                 <Route path="/" element={<Inicio/>}/>
+                <Route path="/perros" element={<Perros/>}/>
+                <Route path="/gatos" element={<Gatos/>}/>
+                <Route path="/contactos" element={<Contactos/>}/>
+                <Route path="/login" element={<Login/>}/>
+                <Route path="/ShoppingCart" element={<ShoppingCart/>}/>
             </Routes>
+
             <footer>
-                <PorqueElejirnos>{caracteristicas}</PorqueElejirnos>
                 <RedesSociales/>
                 <Footer/> 
             </footer>
-
         </Router>
     </>
 )

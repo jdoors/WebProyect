@@ -36,13 +36,13 @@ export const caracteristicas = [
   },
 ]
 
-export default function PorqueElejirnos() {
+export default function PorqueElegirnos() {
   return (
     <div className="bg-white">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="lg:text-center">
           <p className="mt-[50px] text-4xl font-bold leading-10 tracking-tight text-center text-gray-900 font-cormorant">
-            Porque elejir <span className="text-[#FF8126] leading-10">Pet Shop FullStack</span>
+            Porque elegir <span className="text-[#FF8126] leading-10">Pet Shop FullStack</span>
           </p>
         </div>
 
