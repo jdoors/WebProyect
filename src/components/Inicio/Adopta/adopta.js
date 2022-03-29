@@ -4,7 +4,7 @@ import adopta from '../Adopta/Image/adopta.jpg'
 const adoptar = () => {
   return (
     <div className='grid mt-8 auto-rows-min md:grid-cols-2 md:justify-items-center mx-14'>
-
+      
       <div className='mt-10 md:ml-3'> 
         <h1 className='font-cormorant font-bold text-4xl text-[#FF8126]'> Porqué adoptar una mascota?</h1>
                 
@@ -16,10 +16,11 @@ const adoptar = () => {
         </p>
         <button className='bg-[#FF8126] text-white rounded w-[230px] h-10 mt-4 md:mt-8 mb-6'>Leer más</button>
         
-        <div >
-        <img className='w-[500px] h-[350px] opacity-100 md:w-[560px] md:h-[390px]' src={adopta} alt='Adopta una mascota' />
-        </div>
-      </div >
+      </div>
+      
+      <div >
+          <img className='w-[500px] h-[350px] opacity-100 md:w-[560px] md:h-[390px]' src={adopta} alt='Adopta una mascota' />
+      </div>
 
       
     </div>
