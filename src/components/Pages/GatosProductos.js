@@ -1,13 +1,13 @@
 
 import React from 'react'
-import RoyalCanin from './Image/RoyalCanin.jpg'
+import RoyalCaninGato from './Image/RoyalCaninGato.jpg'
 import PelotaGato from './Image/PelotaGato.jpg'
 import Comedero from './Image/Comedero.jpg'
 import RascadorGato from'./Image/RascadorGato.jpg'
 
 
 export const productsList =[
-    { id:"1" , name:"Vitalcan" ,price: 100 ,img:RoyalCanin },
+    { id:"1" , name:"Vitalcan" ,price: 100 ,img:RoyalCaninGato },
     { id:"2" , name:"Pelota", price: 100, img:PelotaGato },
     { id:"3" , name:"Comedero", price: 100, img :Comedero},
     { id:"4" , name:"Rascador", price: 100, img:RascadorGato},
