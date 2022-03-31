@@ -12,10 +12,6 @@ return (
         {productsList.map((producto) =><GatosProductos key={producto.id} data={producto}/>)}
     </div>
 
-    )}
-        
-
-
-
+)}
 
 export default Gatos

@@ -21,13 +21,13 @@ return (
     
     <div className='grid auto-row-min pt-20'>
 
-        <div className='text-center rounded-2xl w-3/5 h-3/5'>
+        <div className=' w-3/5 h-3/5'>
         <img src={img}alt={name}/>
         </div>
     
-        <div className='  mt-12'>
+        <div className=' text-justify text-lg  mt-12'>
             <h3 className='ml-8'>{name}</h3>
-            <p className='ml-8'>${price}.00</p>
+            <p className='text-slate-900 mt-1 ml-8'>${price}.00</p>
             <button className='bg-slate-300 border-inherit rounded font-bold w-[150px] mt-2'>Comprar</button>
         </div>
         
