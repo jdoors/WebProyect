@@ -7,9 +7,9 @@ import RascadorGato from'./Image/RascadorGato.jpg'
 
 
 export const productsList =[
-    { id:"1" , name:"Vitalcan" ,price: 100 ,img:RoyalCaninGato },
-    { id:"2" , name:"Pelota", price: 100, img:PelotaGato },
-    { id:"3" , name:"Comedero", price: 100, img :Comedero},
+    { id:"1" , name:"Vitalcan Gato" ,price: 100 ,img:RoyalCaninGato },
+    { id:"2" , name:"Pelota Gato", price: 100, img:PelotaGato },
+    { id:"3" , name:"Comedero Gato", price: 100, img :Comedero},
     { id:"4" , name:"Rascador", price: 100, img:RascadorGato},
 ]
 

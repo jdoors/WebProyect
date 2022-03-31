@@ -7,8 +7,8 @@ import Hueso from'./Image/Hueso.jpg'
 
 export const productsListDog =[
     { id:"1" , name:"RoyalCanin" ,price: 100 ,img:RoyalCanin },
-    { id:"2" , name:"Pelota", price: 100, img:PelotaPerro },
-    { id:"3" , name:"Comedero", price: 100, img :ComederoPerro},
+    { id:"2" , name:"Pelota Perro", price: 100, img:PelotaPerro },
+    { id:"3" , name:"Comedero Perro", price: 100, img :ComederoPerro},
     { id:"4" , name:"Hueso", price: 100, img:Hueso},
 ]
 
