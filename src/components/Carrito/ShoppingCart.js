@@ -33,7 +33,7 @@ const ShoppingCart = () => {
         </article>
         <h3 className='mt-5 ml-10 text-lg font-medium'>Carrito</h3>
         <div className="flex flex-wrap justify-center">
-          {cart.map((item, index) => <CartItem key={index} data={item} deleteFromCart={deleteFromCart}/>)}
+          {cart.map((item, index) => <CartItem key={index} data={item} addToCart={addToCart} deleteFromCart={deleteFromCart}/>)}
         </div>
         <button className="bg-[#FF8126] text-white rounded w-[230px] h-10 ml-5 mt-5" onClick={clearCart}>Limpiar Carrito</button>
     </div>
