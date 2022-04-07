@@ -3,7 +3,7 @@ const CartItem = ({data, deleteFromCart, addToCart}) => {
     let {id, name, price, quantity} = data;
 
     return (
-        <div className='font-poppins mb-10 bg-orange-100 grid grid-cols-6 place-items-center gap-4 w-full'>
+        <div className='font-poppins mb-10 bg-yellow-200 grid grid-cols-6 place-items-center gap-4 w-full'>
             <div className='col-span-3 flex flex-col items-center gap-4 py-4'>
                 <h4 className='text-lg font-medium'>{name}</h4>
                 <button className="bg-red-400 text-white rounded w-28 h-8" onClick={() => deleteFromCart(id, true)}>Remove</button>

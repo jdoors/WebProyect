@@ -1,5 +1,5 @@
 {
-"ProductosGatos":[
+"products":[
     {
         "id":1,
         "name": "Vitalcan",
@@ -8,7 +8,7 @@
     },
     {
         "id":2,
-        "name": " Pelota Gato",
+        "name": "Pelota Gato",
         "price": 200
     },
     {
@@ -20,10 +20,7 @@
         "id":4,
         "name": "Rascador",
         "price": 400
-    }
-],
-
-"ProductosPerros":[
+    },
     {
         "id":5,
         "name": "Royal Canin",
