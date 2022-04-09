@@ -1,4 +1,5 @@
 
+
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 import Inicio from "./Inicio/Inicio"
 import Navbar from "./navbar"
