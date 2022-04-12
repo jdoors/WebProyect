@@ -26,7 +26,17 @@ const ShoppingCart = () => {
         }, [])
 
 
-        const addToCart = (id) => {
+        const addToCart = async (id, data) => {
+
+          let options = {
+            method: "POST",
+            headers: {"content-type": "application/json"},
+            data: JSON.stringify(data)
+          };
+          let res = await axios("http://localhost:3000/cart", options)
+          console.log(res)
+          
+
           dispatch({type:TYPES.ADD_TO_CART, payload:id})
         };
 

@@ -7,7 +7,7 @@ const Product = ({data, addToCart}) => {
         <div className="product">
             <h4>{name}</h4>
             <h5>${price}.00</h5>
-            <button onclick={() => addToCart(id)}>Agregar</button>
+            <button onclick={() => addToCart(id, data)}>Agregar</button>
         </div>
     )
 }
