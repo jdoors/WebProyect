@@ -11,21 +11,21 @@ const ShoppingCart = () => {
         const {products, cart} = state;
 
         const updateState = async () => {
-          const productsURL = "http://localhost:3000/products/";
+          const productsURL = "http://localhost:3000/products";
           const cartURL = "http://localhost:3000/cart";
           const resProducts = await axios.get(productsURL);
           const resCart = await axios.get(cartURL);
           const newProduct = await resProducts.data;
           const newCartItem = await resCart.data;
 
-          dispatch({type: TYPES.READ_STATE, payload: [newProduct, newCartItem]})
+          dispatch({type: TYPES.READ_STATE, payload: {newProduct, newCartItem}})
         }
 
         useEffect(() => {
           updateState()
         }, [])
 
-        // Funciones
+
         const addToCart = (id) => {
           dispatch({type:TYPES.ADD_TO_CART, payload:id})
         };
@@ -56,10 +56,6 @@ const ShoppingCart = () => {
         </div>
         <div className='flex items-center justify-evenly'>
           <button className=" bg-slate-400 border-slate-600 border rounded w-[230px] h-10 font-bold" onClick={clearCart}>Limpiar Carrito</button>
-          <div className="rounded bg-green-300 border w-60 font-bold h-10 text-center pt-[6px]">
-            {/* Acá iría el cálculo del costo total de la compra, debería ir sumando los precios totales de cada producto (y restando si se eliminan) */}
-            <h4>Total Compra: $.00</h4> 
-          </div>
         </div>
         <h3 className='mt-5 ml-10 text-lg font-medium'>Productos</h3>
         <article className="flex flex-wrap justify-evenly">
