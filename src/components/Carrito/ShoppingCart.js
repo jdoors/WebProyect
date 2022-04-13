@@ -72,7 +72,34 @@ const ShoppingCart = () => {
             dispatch({type: TYPES.REMOVE_ALL_PRODUCTS, payload: data.id});
 
           } else {
-            dispatch({type: TYPES.REMOVE_ONE_PRODUCT, payload: data.id});
+
+            let iteminCart = state.cart.find(item => item.id === data.id)
+
+            if (iteminCart.quantity > 1) {
+              let endpoint = `http://localhost:3000/cart/${data.id}`
+
+              let options = {
+                method: "PUT",
+                headers: {"content-type": "application/json"},
+                data: JSON.stringify({...data, quantity: iteminCart.quantity - 1})
+              },
+              res = await axios(endpoint, options)
+
+              dispatch({type: TYPES.REMOVE_ONE_PRODUCT, payload: data.id});
+
+            } else {
+              let endpoint = `http://localhost:3000/cart/${data.id}`
+
+              let options = {
+                method: "DELETE",
+                headers: {"content-type": "application/json"}
+              },
+              res = await axios(endpoint, options)
+  
+              dispatch({type: TYPES.REMOVE_ONE_PRODUCT, payload: data.id});
+            }
+
+
           }
         };
 

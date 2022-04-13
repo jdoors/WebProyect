@@ -13,7 +13,7 @@ const CartItem = ({data, deleteFromCart, addToCart}) => {
                 <h5 className="mx-4">
                     {quantity}
                 </h5>
-                <button className="bg-green-400 text-white rounded w-5 h-5" onClick={() => addToCart(id)}>+</button>
+                <button className="bg-green-400 text-white rounded w-5 h-5" onClick={() => addToCart(data)}>+</button>
             </div>
             <div>
                 <h5>
