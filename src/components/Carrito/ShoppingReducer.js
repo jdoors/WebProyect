@@ -37,10 +37,10 @@ export function shoppingReducer(state, action) {
                 : {...state, cart: state.cart.filter((item) => item.id !== action.payload)}
         }
         case TYPES.REMOVE_ALL_PRODUCTS: {
-            return {...state, cart: state.cart.filter((item) => item.id !== action.payload)}
+            return {...state, cart: state.cart.filter(item => item.id !== action.payload)}
         }
         case TYPES.CLEAR_CART: 
-            return shoppingInitialState
+            return shoppingInitialState;
         default:
             return state;
     }

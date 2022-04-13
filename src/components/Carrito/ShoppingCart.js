@@ -59,11 +59,20 @@ const ShoppingCart = () => {
           }
         };
 
-        const deleteFromCart = (id, all = false) => {
+        const deleteFromCart = async (data, all = false) => {
           if(all) {
-            dispatch({type: TYPES.REMOVE_ALL_PRODUCTS, payload: id});
+            let endpoint = `http://localhost:3000/cart/${data.id}`
+
+            let options = {
+              method: "DELETE",
+              headers: {"content-type": "application/json"}
+            },
+            res = await axios(endpoint, options)
+
+            dispatch({type: TYPES.REMOVE_ALL_PRODUCTS, payload: data.id});
+
           } else {
-            dispatch({type: TYPES.REMOVE_ONE_PRODUCT, payload: id});
+            dispatch({type: TYPES.REMOVE_ONE_PRODUCT, payload: data.id});
           }
         };
 
