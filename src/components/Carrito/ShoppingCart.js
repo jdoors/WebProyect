@@ -1,9 +1,9 @@
 import React, { useReducer, useEffect } from 'react'
 import { shoppingReducer, shoppingInitialState } from './ShoppingReducer';
-import ProductItem from "./ProductItem";
 import CartItem from './CartItem';
 import { TYPES } from './ShoppingAction';
 import axios from "axios";
+import Product from './Product';
 
 const ShoppingCart = () => {
         const [state, dispatch] = useReducer(shoppingReducer, shoppingInitialState);
@@ -26,18 +26,37 @@ const ShoppingCart = () => {
         }, [])
 
 
-        const addToCart = async (id, data) => {
+        const addToCart = async (data) => {
 
-          let options = {
-            method: "POST",
-            headers: {"content-type": "application/json"},
-            data: JSON.stringify(data)
-          };
-          let res = await axios("http://localhost:3000/cart", options),
-              itemData = await res.data
-              console.log(itemData)
+          let newItem = state.products.find(product => product.id === data.id)
 
-          dispatch({type:TYPES.ADD_TO_CART, payload:id})
+          let iteminCart = state.cart.find(item => item.id === newItem.id)
+
+          if (iteminCart) {
+            let endpoint = `http://localhost:3000/cart/${data.id}`
+
+            let options = {
+              method: 'PUT',
+              headers: {"content-type": "application/json"},
+              data: JSON.stringify({...data, quantity: iteminCart.quantity + 1})
+            },
+            res = await axios(endpoint, options),
+            itemData = await res.data
+
+            dispatch({type:TYPES.ADD_TO_CART, payload: {itemData}})
+
+          } else {
+            let options = {
+              method: "POST",
+              headers: {"content-type": "application/json"},
+              data: JSON.stringify({...data, quantity: 1})
+            };
+
+            let res = await axios("http://localhost:3000/cart", options),
+            itemData = await res.data
+  
+            dispatch({type:TYPES.ADD_TO_CART, payload: {itemData}})
+          }
         };
 
         const deleteFromCart = (id, all = false) => {
@@ -69,7 +88,7 @@ const ShoppingCart = () => {
         </div>
         <h3 className='mt-5 ml-10 text-lg font-medium'>Productos</h3>
         <article className="flex flex-wrap justify-evenly">
-          {products.map((product) => (<ProductItem key={product.id} data={product} addToCart={addToCart}/>))}
+          {products.map((product) => (<Product key={product.id} data={product} addToCart={addToCart}/>))}
         </article>
     </div>
   )

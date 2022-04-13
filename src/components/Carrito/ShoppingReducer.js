@@ -17,7 +17,7 @@ export function shoppingReducer(state, action) {
 
         case TYPES.ADD_TO_CART: {
 
-            let newItem = state.products.find(product => product.id === action.payload);
+            let newItem = state.products.find(product => product.id === action.payload.itemData.id);
             
             let iteminCart = state.cart.find(item=> item.id===newItem.id)
 
@@ -26,7 +26,7 @@ export function shoppingReducer(state, action) {
                 item.id===newItem.id ? {...item, quantity: item.quantity + 1} : item)} 
             : {
                 ...state, 
-                cart: [...state.cart, {...newItem, quantity: 1}]
+                cart: [...state.cart, {...action.payload.itemData, quantity: 1}]
             };
         }
         case TYPES.REMOVE_ONE_PRODUCT: {
