@@ -122,10 +122,7 @@ const ShoppingCart = () => {
         <div className='flex items-center justify-evenly'>
           <button className=" bg-slate-400 border-slate-600 border rounded w-[230px] h-10 font-bold" onClick={clearCart}>Limpiar Carrito</button>
         </div>
-        <h3 className='mt-5 ml-10 text-lg font-medium'>Productos</h3>
-        <article className="flex flex-wrap justify-evenly">
-          {products.map((product) => (<Product key={product.id} data={product} addToCart={addToCart}/>))}
-        </article>
+
     </div>
   )
 }
