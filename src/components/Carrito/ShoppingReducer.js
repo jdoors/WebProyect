@@ -1,21 +1,23 @@
 import { TYPES } from "./ShoppingAction";
 
 export const shoppingInitialState = {
-    product: [
-        { id: 1, name: "Producto A", price: 10 },
-        { id: 2, name: "Producto B", price: 50 },
-        { id: 3, name: "Producto C", price: 100 },
-        { id: 4, name: "Producto D", price: 150 },
-        { id: 5, name: "Producto E", price: 200 },
-        ],
-        cart: [],
+    products: [],
+    cart: [],
 };
 
 export function shoppingReducer(state, action) {
     switch (action.type) {
+        case TYPES.READ_STATE: {
+            return {
+                ...state, 
+                products: action.payload.newProduct,
+                cart: action.payload.newCartItem
+            }
+        }
+
         case TYPES.ADD_TO_CART: {
 
-            let newItem = state.product.find(product => product.id === action.payload);
+            let newItem = state.products.find(product => product.id === action.payload.itemData.id);
             
             let iteminCart = state.cart.find(item=> item.id===newItem.id)
 
@@ -24,7 +26,7 @@ export function shoppingReducer(state, action) {
                 item.id===newItem.id ? {...item, quantity: item.quantity + 1} : item)} 
             : {
                 ...state, 
-                cart: [...state.cart, {...newItem, quantity: 1}]
+                cart: [...state.cart, {...action.payload.itemData, quantity: 1}]
             };
         }
         case TYPES.REMOVE_ONE_PRODUCT: {
@@ -35,10 +37,10 @@ export function shoppingReducer(state, action) {
                 : {...state, cart: state.cart.filter((item) => item.id !== action.payload)}
         }
         case TYPES.REMOVE_ALL_PRODUCTS: {
-            return {...state, cart: state.cart.filter((item) => item.id !== action.payload)}
+            return {...state, cart: state.cart.filter(item => item.id !== action.payload)}
         }
         case TYPES.CLEAR_CART: 
-            return shoppingInitialState
+            return shoppingInitialState;
         default:
             return state;
     }
