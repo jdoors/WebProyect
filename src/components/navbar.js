@@ -6,6 +6,7 @@ import {faMagnifyingGlass,faCartShopping,faArrowRightToBracket} from '@fortaweso
 
 
 
+
 const navbar = () => {
   return (
   <div className='flex flex-wrap items-center justify-between px-12 py-1 mx-auto my-0 bg-white'>
@@ -27,11 +28,11 @@ const navbar = () => {
       </li>
 
       <li>
-        <NavLink to="/gatos">Gatos</NavLink>
+        <NavLink to="/Productos">Productos</NavLink>
       </li>
 
       <li>
-        <NavLink to="/contactos">Contactos</NavLink>
+        <NavLink to="/contactos">Contacto</NavLink>
       </li>
 
       

@@ -1,55 +1,45 @@
 {
-"ProductosGatos":[
+  "products": [
     {
-        "id":1,
-        "name": "Vitalcan",
-        "price": 100
-
+      "id": 1,
+      "name": "Vitalcan",
+      "price": 100
     },
     {
-        "id":2,
-        "name": " Pelota Gato",
-        "price": 200
+      "id": 2,
+      "name": "Pelota Gato",
+      "price": 200
     },
     {
-        "id":3,
-        "name": "Comedero Gato",
-        "price": 300
-    }, 
+      "id": 3,
+      "name": "Comedero Gato",
+      "price": 300
+    },
     {
-        "id":4,
-        "name": "Rascador",
-        "price": 400
+      "id": 4,
+      "name": "Rascador",
+      "price": 400
+    },
+    {
+      "id": 5,
+      "name": "Royal Canin",
+      "price": 100
+    },
+    {
+      "id": 6,
+      "name": "Pelota Perro",
+      "price": 100
+    },
+    {
+      "id": 7,
+      "name": "Comedero Perro",
+      "price": 100
+    },
+    {
+      "id": 8,
+      "name": "Hueso",
+      "price": 100
     }
-],
-
-"ProductosPerros":[
-    {
-        "id":5,
-        "name": "Royal Canin",
-        "price": 100
-    
-    },
-    {
-        "id":6,
-        "name": "Pelota Perro",
-        "price": 100
-    
-    },
-    {
-        "id":6,
-        "name": "Comedero Perro",
-        "price": 100
-    
-    },
-    {
-        "id":7,
-        "name": "Hueso",
-        "price": 100
-    
-    }
-
-],
-
-"cart":[]
+  ],
+  "cart": []
 }

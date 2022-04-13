@@ -16,14 +16,9 @@ const Footer = () => {
             <li>Concejos para tu mascota</li>
             <li>Preguntas frecuentes</li>
           </ol>
-          
         </div>
         <div class="w-full sm:w-1/4 px-12 flex flex-col space-y-4">
           <a class="font-poppins font-medium text-black" href="#">Productos</a>
-          <ol className='text-slate-600'>
-            <li>Perros</li>
-            <li>Gatos</li>
-          </ol>
         </div>
         <div class="w-full sm:w-1/4 px-12 flex flex-col space-y-4">
           <a class="font-poppins font-medium text-black" href="#">Contacto</a>
