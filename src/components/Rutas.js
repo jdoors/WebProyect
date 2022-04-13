@@ -10,7 +10,7 @@ import RedesSociales from "./RedesSociales/RedesSociales.js"
 import FreeDelivery from "./Inicio/FreeDelivery.js"
 import Footer from "../components/Footer/footer"
 import Productos from "./Pages/Productos"
-import Perros from "./Pages/Perros"
+
 
 
 const Rutas = () => {
@@ -24,7 +24,6 @@ return (
 
             <Routes>
                 <Route path="/" element={<Inicio/>}/>
-                <Route path="/perros" element={<Perros/>}/>
                 <Route path="/Productos" element={<Productos/>}/>
                 <Route path="/contactos" element={<Contactos/>}/>
                 <Route path="/login" element={<Login/>}/>
