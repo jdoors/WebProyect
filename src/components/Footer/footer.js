@@ -1,5 +1,6 @@
 import React from 'react';
 import logoMascota from '../Footer/Imagenes/logonaranja.jpg';
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
@@ -18,10 +19,10 @@ const Footer = () => {
           </ol>
         </div>
         <div class="w-full sm:w-1/4 px-12 flex flex-col space-y-4">
-          <a class="font-poppins font-medium text-black" href="#">Productos</a>
+          <Link class="font-poppins font-medium text-black" to="/Productos">Productos</Link>
         </div>
         <div class="w-full sm:w-1/4 px-12 flex flex-col space-y-4">
-          <a class="font-poppins font-medium text-black" href="#">Contacto</a>
+          <Link class="font-poppins font-medium text-black" to="/Contactos">Contacto</Link>
         </div>
       </div>
       </div>
