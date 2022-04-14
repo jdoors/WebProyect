@@ -2,43 +2,51 @@
   "products": [
     {
       "id": 1,
-      "name": "Vitalcan",
-      "price": 100
+      "name": "Royal Canin",
+      "price": 100,
+      "img":"https://i.ibb.co/Gn6QfqK/Royal-Canin-Gato.jpg"
     },
     {
       "id": 2,
       "name": "Pelota Gato",
-      "price": 200
+      "price": 200,
+      "img":"https://i.ibb.co/z44TD6J/Pelota-Gato.jpg"
     },
     {
       "id": 3,
       "name": "Comedero Gato",
-      "price": 300
+      "price": 300,
+      "img":"https://i.ibb.co/BV1hfy3/Comedero.jpg"
     },
     {
       "id": 4,
       "name": "Rascador",
-      "price": 400
+      "price": 400,
+      "img":"https://i.ibb.co/gJ3c7Ky/Rascador-Gato.jpg"
     },
     {
       "id": 5,
-      "name": "Royal Canin",
-      "price": 100
+      "name": "Eukanuba",
+      "price": 100,
+      "img":"https://i.ibb.co/TcsHb1C/Eukanuba.jpg"
     },
     {
       "id": 6,
       "name": "Pelota Perro",
-      "price": 100
+      "price": 100,
+      "img":"https://i.ibb.co/C6Cdx2X/Pelota-Perro.jpg"
     },
     {
       "id": 7,
       "name": "Comedero Perro",
-      "price": 100
+      "price": 100,
+      "img":"https://i.ibb.co/gT2b8wL/Comedero-Perro.jpg"
     },
     {
       "id": 8,
       "name": "Hueso",
-      "price": 100
+      "price": 100,
+      "img":"https://i.ibb.co/PNY1tNB/Hueso.jpg"
     }
   ],
   "cart": []
