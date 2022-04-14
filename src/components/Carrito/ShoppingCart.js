@@ -3,7 +3,7 @@ import { shoppingReducer, shoppingInitialState } from './ShoppingReducer';
 import CartItem from './CartItem';
 import { TYPES } from './ShoppingAction';
 import axios from "axios";
-import Product from './Product';
+
 
 const ShoppingCart = () => {
         const [state, dispatch] = useReducer(shoppingReducer, shoppingInitialState);
