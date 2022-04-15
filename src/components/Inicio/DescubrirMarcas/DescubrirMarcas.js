@@ -1,5 +1,7 @@
 import React from 'react';
 import DescubrirMarcas from "./Imagen/DescubrirMarcas.jpeg";
+import { Link } from 'react-router-dom'
+
 
 const DMarca = () => {
     return (
@@ -13,7 +15,7 @@ const DMarca = () => {
                 <h2 className="text-xl md:text-3xl font-poppins ml-[55px]">Descubri marcas y sus historias</h2>
                 <br/>
                 <button className='border-2 border-black text-black rounded w-[200px] h-11 font-poppins ml-[55px]'>
-                    Buscar Marcas
+                    <Link to="/Productos">Buscar Marcas</Link>
                 </button>
             </div>
             {/* Para sm */}
@@ -24,7 +26,7 @@ const DMarca = () => {
                 <h2 className="text-xl font-poppins">Descubri marcas y sus historias</h2>
                 <br/>
                 <button className='border-2 border-black text-black rounded w-[200px] h-11 font-poppins'>
-                    Buscar Marcas
+                    <Link to="/Productos">Buscar Marcas</Link>
                 </button>
             </div>
 
@@ -45,4 +47,3 @@ const DMarca = () => {
 }
 
 export default DMarca;
-

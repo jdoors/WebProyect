@@ -8,6 +8,10 @@ import axios from "axios";
 
 const Productos = () => {
 
+    React.useEffect(() => {
+       window.scrollTo(0, 0);
+    }, );
+
     const [state, dispatch] = useReducer(shoppingReducer, shoppingInitialState);
 
     const {products, cart} = state;
@@ -74,3 +78,4 @@ return (
 )}
 
 export default Productos
+

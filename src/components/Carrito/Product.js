@@ -6,7 +6,7 @@ const Product = ({data, addToCart}) => {
     return (
         <div className="product font-poppins w-[270px] h-[332px] text-center mt-10 items-center">
             <div>
-                <img className='object-center ml-10 w-44 h-36' src={img} alt="imagen"/>
+                <img className='ml-10 object-fit w-44 h-36' src={img} alt="imagen"/>
             </div>
 
             <div className='grid col-auto justify-center h-40 bg-[#F7F5F0] rounded-b-2xl'>

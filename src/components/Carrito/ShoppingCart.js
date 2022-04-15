@@ -103,7 +103,7 @@ const ShoppingCart = () => {
           }
         };
 
-        const clearCart = () => {dispatch({type: TYPES.CLEAR_CART})};
+        
 
   return (
     <div className='mb-8'>
@@ -119,10 +119,7 @@ const ShoppingCart = () => {
         <div className="flex flex-col">
           {cart.map((item, index) => <CartItem key={index} data={item} addToCart={addToCart} deleteFromCart={deleteFromCart}/>)}
         </div>
-        <div className='flex items-center justify-evenly'>
-          <button className=" bg-slate-400 border-slate-600 border rounded w-[230px] h-10 font-bold" onClick={clearCart}>Limpiar Carrito</button>
-        </div>
-
+        
     </div>
   )
 }
