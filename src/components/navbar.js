@@ -23,8 +23,6 @@ const navbar = () => {
       <NavLink to="/" className="ml-4">Inicio</NavLink>
       </li>  
 
-     
-
       <li>
         <NavLink to="/Productos">Productos</NavLink>
       </li>
@@ -34,10 +32,11 @@ const navbar = () => {
       </li>
 
       
-      <div>
-        <a href='#'><FontAwesomeIcon icon={faMagnifyingGlass} /> </a>
-      </div> 
-        
+        <NavLink to="/buscador">
+        <a><FontAwesomeIcon icon={faMagnifyingGlass}/></a>
+        </NavLink>
+
+      
       <NavLink to="/Login">
         <a><FontAwesomeIcon icon={faArrowRightToBracket} /></a>
       </NavLink>
