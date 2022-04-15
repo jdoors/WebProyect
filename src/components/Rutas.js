@@ -10,7 +10,7 @@ import RedesSociales from "./RedesSociales/RedesSociales.js"
 import FreeDelivery from "./Inicio/FreeDelivery.js"
 import Footer from "../components/Footer/footer"
 import Productos from "./Pages/Productos"
-import Error404 from "./Error404"
+import Error404 from "./Error404/Error404"
 
 
 
