@@ -14,7 +14,7 @@ import ton from "./img/ton.jpg";
 
 export default function CarouselComponent() {
   return (
-      <div className="h-auto mx-auto my-24 w-[600px]">
+      <div className="h-auto mx-auto my-24 w-[400px]">
           <h2 className="flex justify-center mt-6 mb-4 ml-4 text-3xl font-semibold text-orange-500 uppercase">Nuestras Mascotas</h2>
 
           <div>
