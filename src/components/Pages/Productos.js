@@ -69,7 +69,7 @@ return (
     
     <div>
         
-          <h3 className='pt-5 text-lg font-medium ml-60' >Productos</h3>
+          <h3 className='pt-5 text-2xl font-bold text-center text-orange-600' >Productos</h3>
           <article className="flex flex-wrap justify-evenly">
           {products.map((product) => (<Product key={product.id} data={product} addToCart={addToCart}/>))}
         </article>
