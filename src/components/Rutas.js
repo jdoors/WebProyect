@@ -10,6 +10,7 @@ import RedesSociales from "./RedesSociales/RedesSociales.js"
 import FreeDelivery from "./Inicio/FreeDelivery.js"
 import Footer from "../components/Footer/footer"
 import Productos from "./Pages/Productos"
+import Error404 from "./Error404"
 
 
 
@@ -28,6 +29,7 @@ return (
                 <Route path="/contactos" element={<Contactos/>}/>
                 <Route path="/login" element={<Login/>}/>
                 <Route path="/ShoppingCart" element={<ShoppingCart/>}/>
+                <Route path="*" element={<Error404/>}/>
             </Routes>
 
             <footer>
