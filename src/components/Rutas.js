@@ -10,6 +10,7 @@ import RedesSociales from "./RedesSociales/RedesSociales.js"
 import FreeDelivery from "./Inicio/FreeDelivery.js"
 import Footer from "../components/Footer/footer"
 import Productos from "./Pages/Productos"
+import Buscador from "./Pages/Buscador"
 
 
 
@@ -27,6 +28,7 @@ return (
                 <Route path="/Productos" element={<Productos/>}/>
                 <Route path="/contactos" element={<Contactos/>}/>
                 <Route path="/login" element={<Login/>}/>
+                <Route path="/buscador" element={<Buscador/>}/>
                 <Route path="/ShoppingCart" element={<ShoppingCart/>}/>
             </Routes>
 
