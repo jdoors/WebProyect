@@ -7,7 +7,7 @@ import {faMagnifyingGlass,faCartShopping,faArrowRightToBracket} from '@fortaweso
 
 
 
-const navbar = () => {
+const navbar = ({handleClick}) => {
   return (
   <div className='flex flex-wrap items-center justify-between px-12 py-1 mx-auto my-0 bg-white'>
 
@@ -17,8 +17,15 @@ const navbar = () => {
     </div>
 
     <div>
+    <div className='px-4 cursor-pointer md:hidden ' onClick={handleClick}>
+        <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+        <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+    </div>
+</div>
+    <div className='hidden md:block'>
     
-    <ul className='flex flex-col space-x-4 font-poppins md:flex-row'>  
+    <ul className='flex flex-col space-x-4 font-poppins md:flex-row '>  
       <li>
       <NavLink to="/" className="ml-4">Inicio</NavLink>
       </li>  
