@@ -12,6 +12,8 @@ import Footer from "../components/Footer/footer"
 import Productos from "./Pages/Productos"
 import Buscador from "./Pages/Buscador"
 import Error404 from "./Error404/Error404"
+import MenuHamb from "./MenuHamb"
+
 
 
 
@@ -22,6 +24,7 @@ return (
             <header>
                 <FreeDelivery/>
                 <Navbar/>
+                <MenuHamb/>
             </header>
 
             <Routes>
