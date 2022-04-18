@@ -10,6 +10,10 @@ import RedesSociales from "./RedesSociales/RedesSociales.js"
 import FreeDelivery from "./Inicio/FreeDelivery.js"
 import Footer from "../components/Footer/footer"
 import Productos from "./Pages/Productos"
+import Buscador from "./Pages/Buscador"
+import Error404 from "./Error404/Error404"
+import MenuHamb from "./MenuHamb"
+
 
 
 
@@ -20,6 +24,7 @@ return (
             <header>
                 <FreeDelivery/>
                 <Navbar/>
+                <MenuHamb/>
             </header>
 
             <Routes>
@@ -27,7 +32,9 @@ return (
                 <Route path="/Productos" element={<Productos/>}/>
                 <Route path="/contactos" element={<Contactos/>}/>
                 <Route path="/login" element={<Login/>}/>
+                <Route path="/buscador" element={<Buscador/>}/>
                 <Route path="/ShoppingCart" element={<ShoppingCart/>}/>
+                <Route path="*" element={<Error404/>}/>
             </Routes>
 
             <footer>

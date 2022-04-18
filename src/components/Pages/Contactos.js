@@ -2,6 +2,11 @@ import React, { useState } from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 
 const Contactos = () => {
+
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+ }, );
+
   const [formEnviado, cambiarFormEnviado] = useState(false);
 
   return (
@@ -68,14 +73,12 @@ const Contactos = () => {
                   type="text"
                   id="name"
                   name="name"
-                  className="text-base -ml-1 md:-ml-10 block 
-                            bg-gray-100 appearance-none border-2 border-gray-200 rounded w-full py-1 px-2
-                            text-black leading-tight focus:outline-none focus:bg-white focus:border-orange-400"
+                  className="block w-full px-2 py-1 -ml-1 text-base leading-tight text-black bg-gray-100 border-2 border-gray-200 rounded appearance-none md:-ml-10 focus:outline-none focus:bg-white focus:border-orange-400"
                 />
                 <ErrorMessage
                   name="name"
                   component={() => (
-                    <div className="ml-25 text-sm  md:-ml-9 text-red-600 ">{errors.name}</div>
+                    <div className="text-sm text-red-600 ml-25 md:-ml-9 ">{errors.name}</div>
                   )}
                 />
               </div>
@@ -89,14 +92,12 @@ const Contactos = () => {
                   type="email"
                   id="email"
                   name="email"
-                  className="text-base -ml-1 md:-ml-10 block 
-                            bg-gray-100 appearance-none border-2 border-gray-200 rounded w-full py-1 px-2
-                            text-black leading-tight focus:outline-none focus:bg-white focus:border-orange-400"
+                  className="block w-full px-2 py-1 -ml-1 text-base leading-tight text-black bg-gray-100 border-2 border-gray-200 rounded appearance-none md:-ml-10 focus:outline-none focus:bg-white focus:border-orange-400"
                 />
                 <ErrorMessage
                   name="email"
                   component={() => (
-                    <div className="ml-25 text-sm  md:-ml-9 text-red-600">{errors.email}</div>
+                    <div className="text-sm text-red-600 ml-25 md:-ml-9">{errors.email}</div>
                   )}
                 />
               </div>
@@ -110,22 +111,20 @@ const Contactos = () => {
                   type="text"
                   id="phone"
                   name="phone"
-                  className="text-base -ml-1 md:-ml-10 block 
-                            bg-gray-100 appearance-none border-2 border-gray-200 rounded w-full py-1 px-2
-                            text-black leading-tight focus:outline-none focus:bg-white focus:border-orange-400"
+                  className="block w-full px-2 py-1 -ml-1 text-base leading-tight text-black bg-gray-100 border-2 border-gray-200 rounded appearance-none md:-ml-10 focus:outline-none focus:bg-white focus:border-orange-400"
                 />
                 <ErrorMessage
                   name="phone"
                   component={() => (
-                    <div className="ml-25 text-sm  md:-ml-9 text-red-600">{errors.phone}</div>
+                    <div className="text-sm text-red-600 ml-25 md:-ml-9">{errors.phone}</div>
                   )}
                 />
               </div>
             </div>
 
-            <div className="w-4/5  md:w-3/4 py-2 space-x-4 md:space-x-6">
+            <div className="w-4/5 py-2 space-x-4 md:w-3/4 md:space-x-6">
               <p className="ml-2 ">Asunto:</p>
-              <div className="  mt-2 space-x-3 md:space-x-9">
+              <div className="mt-2 space-x-3  md:space-x-9">
                 <label className="hover:text-orange-500 hover:font-semibold">
                   <Field
                     type="radio"
@@ -146,7 +145,7 @@ const Contactos = () => {
                   <ErrorMessage
                     name="asunto"
                     component={() => (
-                      <div className="ml-6 text-sm  md:ml-12 text-red-600">{errors.asunto}</div>
+                      <div className="ml-6 text-sm text-red-600 md:ml-12">{errors.asunto}</div>
                     )}
                   />
                 </div>
@@ -162,14 +161,12 @@ const Contactos = () => {
                 <Field
                   name="textarea"
                   as="textarea"
-                  className="text-base -ml-1 md:-ml-10 block 
-                            bg-gray-100 appearance-none border-2 border-gray-200 rounded w-full py-1 px-2
-                            text-black leading-tight focus:outline-none focus:bg-white focus:border-orange-400"
+                  className="block w-full px-2 py-1 -ml-1 text-base leading-tight text-black bg-gray-100 border-2 border-gray-200 rounded appearance-none md:-ml-10 focus:outline-none focus:bg-white focus:border-orange-400"
                 />
                 <ErrorMessage
                   name="textarea"
                   component={() => (
-                    <div className="ml-25 text-sm  md:-ml-9 text-red-600">{errors.textarea}</div>
+                    <div className="text-sm text-red-600 ml-25 md:-ml-9">{errors.textarea}</div>
                   )}
                 />
               </div>
@@ -178,19 +175,18 @@ const Contactos = () => {
             <div className="flex justify-center py-4 ">
               <button
                 type="submit"
-                className="bg-transparent hover:bg-orange-500 text-orange-700 font-semibold
-                         hover:text-white py-2 px-4 border border-orange-500 hover:border-transparent rounded  font-poppins"
+                className="px-4 py-2 font-semibold text-orange-700 bg-transparent border border-orange-500 rounded hover:bg-orange-500 hover:text-white hover:border-transparent font-poppins"
               >
                 Enviar
               </button>
             </div>
 
             {formEnviado && (
-              <div role="alert" className="w-full  mx-auto md:w-5/6">
-                <div className="bg-green-600 text-white font-bold rounded-t px-3 py-1 ">
+              <div role="alert" className="w-full mx-auto md:w-5/6">
+                <div className="px-3 py-1 font-bold text-white bg-green-600 rounded-t ">
                   Enviado!
                 </div>
-                <div className="border border-t-0 border-green-400 rounded-b bg-white px-4 py-2 text-green-700">
+                <div className="px-4 py-2 text-green-700 bg-white border border-t-0 border-green-400 rounded-b">
                   <p> En breve nos pondremos en contacto!</p>
                 </div>
               </div>

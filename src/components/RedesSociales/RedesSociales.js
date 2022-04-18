@@ -17,7 +17,7 @@ const SocialMedia = () => {
                 </h1>
             </div>
 
-            <div className="absolute top-[55%] text-[#FF8126] flex flex-wrap justify-evenly">
+            <div className="absolute top-[55%] text-[#FF8126] flex flex-wrap justify-evenly animate-bounce">
                 
                 <div><FontAwesomeIcon icon={faFacebook} className="mr-8 text-4xl md:text-6xl" /></div>
                 <div><FontAwesomeIcon icon={faInstagram} className="mr-8 text-4xl md:text-6xl" /></div>

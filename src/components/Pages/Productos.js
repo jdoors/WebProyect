@@ -8,6 +8,10 @@ import axios from "axios";
 
 const Productos = () => {
 
+    React.useEffect(() => {
+       window.scrollTo(0, 0);
+    }, );
+
     const [state, dispatch] = useReducer(shoppingReducer, shoppingInitialState);
 
     const {products, cart} = state;
@@ -64,8 +68,9 @@ const Productos = () => {
 return (
     
     <div>
-        <h3 className='mt-5 ml-10 text-lg font-medium'>Productos</h3>
-        <article className="flex flex-wrap justify-evenly">
+        
+          <h3 className='pt-5 text-2xl font-bold text-center text-orange-600' >Productos</h3>
+          <article className="flex flex-wrap justify-evenly">
           {products.map((product) => (<Product key={product.id} data={product} addToCart={addToCart}/>))}
         </article>
     </div>
@@ -73,3 +78,4 @@ return (
 )}
 
 export default Productos
+

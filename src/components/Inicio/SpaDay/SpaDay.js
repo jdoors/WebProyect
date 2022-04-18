@@ -1,5 +1,6 @@
 import React from 'react'
 import FrenchBulldogPuppy from './Images/FrenchBulldogPuppy.jpeg'
+import { Link } from 'react-router-dom'
 
 
 const SpaDay = () => {
@@ -20,7 +21,10 @@ const SpaDay = () => {
         una esponja quitapelusas y fragancias que propiciarán un ambiente calmado para que el perro y su familia disfruten de un agradable momento de tranquilidad.
         </p>
         <p className='text-xs not-italic font-medium leading-6 font-poppins'> ¡Este paquete de spa es un regalo ideal para mostrarle a tu mascota cuánto lo amas!</p>
-        <button className='bg-[#FF8126] text-white rounded w-[230px] h-10 mt-4 md:mt-8 mb-6'to='/Productos'>Comprar</button>
+
+        <button className='bg-[#FF8126] text-white rounded w-[230px] h-10 mt-4 md:mt-8 mb-6'>
+        <Link to="/Productos">Comprar</Link>
+        </button>
         
       </div >
 
