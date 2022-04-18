@@ -3,17 +3,21 @@ import MenuHamb from './MenuHamb';
 import Navbar from './navbar';
 
 
-const [open , setOpen] = useState(false);
 
-const handleClick = () => {
-    setOpen(!open);
-
-};
 
 const MenuFuncional = () => {
+
+    const [open , setOpen] = useState(false);
+
+    const handleClick = () => {
+        setOpen(!open);
+    
+    };
+
 return (
     <div>
-        <Navbar handleClick={handleClick}/>{open && <Navbar/>}
+        <Navbar handleClick={handleClick}/>
+        {open && <MenuHamb/>}
     </div>
 )
 }
