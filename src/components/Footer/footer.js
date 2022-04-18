@@ -14,7 +14,7 @@ const Footer = () => {
           <a class="font-poppins font-medium text-black " href= "#">Sobre Nosotros</a>
           <ol className='text-slate-600'>
             <li>Quiénes somos</li>
-            <li>Concejos para tu mascota</li>
+            <li>Consejos para tu mascota</li>
             <li>Preguntas frecuentes</li>
           </ol>
         </div>
