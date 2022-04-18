@@ -28,7 +28,7 @@
       "id": 5,
       "name": "Eukanuba",
       "price": 100,
-      "img": "https://i.ibb.co/TcsHb1C/Eukanuba.jpg"
+      "img": "https://cdn.shopify.com/s/files/1/0370/1823/9113/products/SeniorecommerceMB_00187b64-65f4-4439-907c-ee6b4609bfbd_500x.png?v=1630424875"
     },
     {
       "id": 6,
@@ -47,6 +47,12 @@
       "name": "Hueso",
       "price": 100,
       "img": "https://i.ibb.co/PNY1tNB/Hueso.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Kit Spa",
+      "price": 400,
+      "img": "https://cdn.grupoelcorteingles.es/SGFM/dctm/MEDIA03/202111/30/00139980700213____6__1200x1200.jpg"
     }
   ],
   "cart": []

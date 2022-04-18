@@ -5,7 +5,7 @@ import { faFacebook, faFacebookMessenger, faInstagram, faTelegram, faTwitter, fa
 
 const SocialMedia = () => {
     return (
-        <div className='relative flex flex-wrap justify-evenly'>
+        <div className='relative flex flex-wrap justify-evenly -z-10'>
             
             <div>
                 <img className="object-cover h-[260px] w-screen filter grayscale" src={RedesSociales} />
