@@ -49,5 +49,13 @@
       "img": "https://i.ibb.co/PNY1tNB/Hueso.jpg"
     }
   ],
-  "cart": []
+  "cart": [
+    {
+      "id": 1,
+      "name": "Royal Canin",
+      "price": 100,
+      "img": "https://i.ibb.co/Gn6QfqK/Royal-Canin-Gato.jpg",
+      "quantity": 1
+    }
+  ]
 }

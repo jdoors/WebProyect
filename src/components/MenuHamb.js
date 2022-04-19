@@ -17,6 +17,7 @@ return (
     <NavLink to="/Login"><FontAwesomeIcon icon={faArrowRightToBracket}/></NavLink>
     <NavLink to="/ShoppingCart"><FontAwesomeIcon icon={faCartShopping}/></NavLink>
 
+
 </div>    
 )
 }

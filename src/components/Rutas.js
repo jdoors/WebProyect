@@ -13,6 +13,7 @@ import Productos from "./Pages/Productos"
 import Buscador from "./Pages/Buscador"
 import Error404 from "./Error404/Error404"
 import MenuHamb from "./MenuHamb"
+import MenuFuncional from "./MenuFuncional"
 
 
 
@@ -23,8 +24,7 @@ return (
         <Router>
             <header>
                 <FreeDelivery/>
-                <Navbar/>
-                <MenuHamb/>
+                <MenuFuncional/>
             </header>
 
             <Routes>
