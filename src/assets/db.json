@@ -55,13 +55,5 @@
       "img": "https://cdn.grupoelcorteingles.es/SGFM/dctm/MEDIA03/202111/30/00139980700213____6__1200x1200.jpg"
     }
   ],
-  "cart": [
-    {
-      "id": 1,
-      "name": "Royal Canin",
-      "price": 100,
-      "img": "https://i.ibb.co/Gn6QfqK/Royal-Canin-Gato.jpg",
-      "quantity": 1
-    }
-  ]
+  "cart": []
 }
