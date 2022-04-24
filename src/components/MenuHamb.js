@@ -8,14 +8,14 @@ const MenuHamb = () => {
 
 return (
 
-<div className='grid items-center grid-rows-6 text-center bg-[#FF8126] text-white md:hidden'>
+<div className='grid items-center grid-rows-6 space-y-4 text-center text-white bg-orange-400 h-max md:hidden'>
 
-    <NavLink to="/" >Inicio</NavLink>
-    <NavLink to="/Productos">Productos</NavLink>
-    <NavLink to="/contactos">Contacto</NavLink>
-    <NavLink to="/buscador"><FontAwesomeIcon icon={faMagnifyingGlass}/></NavLink>
-    <NavLink to="/Login"><FontAwesomeIcon icon={faArrowRightToBracket}/></NavLink>
-    <NavLink to="/ShoppingCart"><FontAwesomeIcon icon={faCartShopping}/></NavLink>
+    <NavLink to="/" className='text-lg hover:text-slate-600'>Inicio</NavLink>
+    <NavLink to="/Productos" className='text-lg hover:text-slate-600'>Productos</NavLink>
+    <NavLink to="/contactos" className='text-lg hover:text-slate-600'>Contacto</NavLink>
+    <NavLink to="/buscador"className='text-lg hover:text-slate-600'><FontAwesomeIcon icon={faMagnifyingGlass}/></NavLink>
+    <NavLink to="/Login"className='text-lg hover:text-slate-600'><FontAwesomeIcon icon={faArrowRightToBracket}/></NavLink>
+    <NavLink to="/ShoppingCart"className='text-lg hover:text-slate-600'><FontAwesomeIcon icon={faCartShopping}/></NavLink>
 
 
 </div>    
