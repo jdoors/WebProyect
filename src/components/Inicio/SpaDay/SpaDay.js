@@ -1,5 +1,5 @@
 import React from 'react'
-import FrenchBulldogPuppy from './Images/FrenchBulldogPuppy.jpeg'
+import FrenchBulldogPuppy from '../../../assets/Image/FrenchBulldogPuppy.jpeg'
 import { Link } from 'react-router-dom'
 
 

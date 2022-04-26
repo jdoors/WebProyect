@@ -1,5 +1,5 @@
 import React from 'react';
-import DescubrirMarcas from "./Imagen/DescubrirMarcas.jpeg";
+import DescubrirMarcas from "../../../assets/Image/DescubrirMarcas.jpeg";
 import { Link } from 'react-router-dom'
 
 
