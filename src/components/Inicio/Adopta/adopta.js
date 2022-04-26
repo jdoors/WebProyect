@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheckCircle } from '@fortawesome/free-solid-svg-icons'
 import React from 'react'
-import adopta from '../Adopta/Image/adopta.jpg'
+import adopta from '../../../assets/Image/adopta.jpg'
 
 const adoptar = () => {
   return (

@@ -1,5 +1,5 @@
 import React from 'react';
-import RedesSociales from "./Imagen/RedesSociales.jpg";
+import RedesSociales from "../../assets/Image/RedesSociales.jpg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faFacebookMessenger, faInstagram, faTelegram, faTwitter, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 

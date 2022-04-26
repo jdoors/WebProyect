@@ -1,6 +1,6 @@
 import React from 'react'
-import fondoRoyalCanin from './Images/Fondo.png'
-import PartnerRoyalCanin from './Images/RoyalCaninLogo.png'
+import fondoRoyalCanin from '../../../assets/Image/Fondo.png'
+import PartnerRoyalCanin from '../../../assets/Image/RoyalCaninLogo.png'
 import { Link } from 'react-router-dom'
 
 const Partner = () => {

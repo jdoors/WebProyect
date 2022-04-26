@@ -1,5 +1,5 @@
 import React from 'react'
-import imagen from './Imagenes/logonaranja.jpg'
+import imagen from '../assets/Image/logonaranja.jpg'
 import { NavLink } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faMagnifyingGlass,faCartShopping,faArrowRightToBracket} from '@fortawesome/free-solid-svg-icons'

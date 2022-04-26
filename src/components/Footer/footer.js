@@ -1,5 +1,5 @@
 import React from 'react';
-import logoMascota from '../Footer/Imagenes/logonaranja.jpg';
+import logoMascota from '../../assets/Image/logonaranja.jpg';
 import { Link } from 'react-router-dom'
 
 const Footer = () => {
