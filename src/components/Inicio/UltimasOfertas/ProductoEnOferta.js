@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom'
 
 
 export const ofertas = [
-    {id:1, name: "Pelota Gato", price: 200, oldPrice: 500, img: "https://i.ibb.co/z44TD6J/Pelota-Gato.jpg"},
-    {id:2, name: "Comedero Gato", price: 300, oldPrice: 600, img: "https://i.ibb.co/BV1hfy3/Comedero.jpg"},
-    {id:3, name: "Hueso", price: 100, oldPrice: 350, img: "https://i.ibb.co/PNY1tNB/Hueso.jpg"},
-    {id:4, name: "Pelota Perro", price: 100, oldPrice: 250, img: "https://i.ibb.co/C6Cdx2X/Pelota-Perro.jpg"}
+    {id:1, name: "Pelota Gato", price: 200, oldPrice: 500, img: "https://i.ibb.co/TPhdgz3/Pelota-Gato.jpg"},
+    {id:2, name: "Comedero Gato", price: 300, oldPrice: 600, img: "https://i.ibb.co/P5bLqjr/Comedero.jpg"},
+    {id:3, name: "Hueso", price: 100, oldPrice: 350, img: "https://i.ibb.co/C90DgNr/Hueso.jpg"},
+    {id:4, name: "Pelota Perro", price: 100, oldPrice: 250, img: "https://i.ibb.co/JQSTFFr/Pelota-Perro.jpg"}
 ]; 
 
 const ProductoEnOferta = ({data}) => {
